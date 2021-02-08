@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1">
+
+    <title>ML MODEL</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+
+<body>
+    <h3 style="text-align: left;">
+        Enter Data
+    </h3>
+    <br>
+    <div>
+        <form action="{{ url_for('predict')}}" method="post">
+            <div class="form-group">
+                <label>Cont1</label>
+                <input type="number" name="Cont1" step=any autofocus autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label>Cont2</label>
+                <input type="number" name="Cont2" step=any autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label>Cont3</label>
+                <input type="number" name="Cont3" step=any autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label>Cont4</label>
+                <input type="number" name="Cont4" step=any autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label>Cont5</label>
+                <input type="number" name="Cont5" step=any autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label>Cont6</label>
+                <input type="number" name="Cont6" step=any autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label>Cont7</label>
+                <input type="number" name="Cont7" step=any autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label>Cont8</label>
+                <input type="number" name="Cont8" step=any autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label>Cont9</label>
+                <input type="number" name="Cont9" step=any autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label>Cont10</label>
+                <input type="number" name="Cont10" step=any autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label>Cont11</label>
+                <input type="number" name="Cont11" step=any autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label>Cont12</label>
+                <input type="number" name="Cont12" step=any autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label>Cont13</label>
+                <input type="number" name="Cont13" step=any autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label>Cont14</label>
+                <input type="number" name="Cont14" step=any autocomplete="off" />
+            </div>
+            <br>
+            <div class="form-group">
+                <button>
+                    Predict
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
