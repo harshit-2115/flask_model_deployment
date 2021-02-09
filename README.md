@@ -10,7 +10,11 @@ This repository contains the files to create a basic ML web app using Flask. The
 
 2. In **app.py**, I am only using a single model as loading all the models into the memory at once was raising Heroku memory errors. 
 
-3. Each model is ~350MB in size and Github doesn't allow files more than 100MB to be uploaded. So, If you want to re-create this ML app, you'll have to dowmload the models from the link mentioned in Instruction 1.
+3. The goal of creating this ML app was just to try deploying ML models. I used Flask as it is easy to learn. Will be trying Streamlit after this.  
 
-4. The goal of creating this ML app was just to try deploying ML models. I used Flask as it is easy to learn. Will be trying Streamlit after this.  
-
+4. I've deployed this on [Heroku](https://ml-app-deploy-flask.herokuapp.com/), but sometimes it crashes due to memory overloading, you can recreate this on your PC by cloning this repo and downloading models from the link mentioned in Intruction 1 and then running:
+    ```
+    pip install -r requirements.txt
+    python app.py
+    ```
+    
