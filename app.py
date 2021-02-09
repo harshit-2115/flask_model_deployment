@@ -1,6 +1,7 @@
 import numpy as np
 from flask import Flask, jsonify, request, render_template
 import joblib
+import lightgbm
 
 app = Flask(__name__)
 
@@ -12,7 +13,7 @@ def home():
 def predict():
     int_features = [float(x) if (x != "") else np.nan for x in request.form.values()]
     final_features = np.array(int_features).reshape((1, -1))
-    model1 = joblib.load('./LGB_Model.pkl')
+    model1 = joblib.load('./LGBmodel_1.pkl')
     # model2 = joblib.load('./results/LGBmodel_2.pkl')
     # model3 = joblib.load('./results/LGBmodel_3.pkl')
     # model4 = joblib.load('./results/LGBmodel_4.pkl')
