@@ -12,7 +12,7 @@ def home():
 def predict():
     int_features = [float(x) if (x != "") else np.nan for x in request.form.values()]
     final_features = np.array(int_features).reshape((1, -1))
-    model1 = joblib.load('./results/LGBmodel_1.pkl')
+    model1 = joblib.load('./LGB_Model.pkl')
     # model2 = joblib.load('./results/LGBmodel_2.pkl')
     # model3 = joblib.load('./results/LGBmodel_3.pkl')
     # model4 = joblib.load('./results/LGBmodel_4.pkl')
@@ -25,8 +25,5 @@ def predict():
     # final_prediction = (pred1+pred2+pred3+pred4+pred5)/5
     return render_template('index.html', predicted_value=f'Predicted Value is {float(pred1)}')
     
-    
-
-
 if __name__ == "__main__":
     app.run(debug=True)
